@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/public_html/service
+END
+crossdomain.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/public_html/service/crossdomain.xml
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/public_html/service/index.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/public_html/service/common.php
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/gplus/cache
+END
+apiCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/gplus/cache/apiCache.php
+END
+apiFileCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/gplus/cache/apiFileCache.php
+END
+apiMemcacheCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/gplus/cache/apiMemcacheCache.php
+END
+apiApcCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/gplus/cache/apiApcCache.php
+END

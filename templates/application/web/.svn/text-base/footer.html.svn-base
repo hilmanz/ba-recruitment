@@ -1,0 +1,7 @@
+   <div id="footer">
+        <div id="footer-bottom">
+            <div class="wrapper">
+                <span>Copyright &copy; Brightcom Creative Communication.</span>
+            </div><!-- end .wrapper -->
+        </div><!-- end #footer-bottom -->
+    </div><!-- end #footer -->

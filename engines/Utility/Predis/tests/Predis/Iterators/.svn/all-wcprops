@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/Iterators
+END
+MultiBulkResponseSimpleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/Iterators/MultiBulkResponseSimpleTest.php
+END
+MultiBulkResponseTupleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/Iterators/MultiBulkResponseTupleTest.php
+END

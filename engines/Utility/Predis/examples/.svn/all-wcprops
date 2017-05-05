@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples
+END
+MultipleSetAndGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/MultipleSetAndGet.php
+END
+PipelineContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/PipelineContext.php
+END
+MultiExecTransactionsWithCAS.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/MultiExecTransactionsWithCAS.php
+END
+SimpleDebuggableConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/SimpleDebuggableConnection.php
+END
+MonitorContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/MonitorContext.php
+END
+CustomDistributionStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/CustomDistributionStrategy.php
+END
+KeyPrefixes.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/KeyPrefixes.php
+END
+ServerSideScripting.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/ServerSideScripting.php
+END
+DispatcherLoop.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/DispatcherLoop.php
+END
+MasterSlaveReplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/MasterSlaveReplication.php
+END
+SharedConfigurations.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/SharedConfigurations.php
+END
+PubSubContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/PubSubContext.php
+END
+MasterSlaveReplicationComplex.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/MasterSlaveReplicationComplex.php
+END
+SimpleSetAndGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/examples/SimpleSetAndGet.php
+END

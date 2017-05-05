@@ -1,0 +1,70 @@
+<div id="container">
+   <div id="content">
+        <form class="quizForm" action="{$basedomain}trivia/savedatatrivia" method="POST">
+            <div class="section question">
+			{foreach from=$triviaQuiz key=k item=v name=foo}
+				<div class="questionbox_{$smarty.foreach.foo.index} allboxquestion" style="display:none" >
+                    <h2 class="red">{$v.question}</h2>
+					{foreach from=$v.answer key=key item=val}
+                    <div class="row triviaRow">
+                    <input id="ans_{$val.id}" type="radio" name="q_{$v.id}" class="styled myradio choicemeeplease" value="{$val.id}" nextquestionid="{$smarty.foreach.foo.index}" />
+                    <label for="ans_{$val.id}" >{$val.answer}</label>
+                    </div>
+					{/foreach} 
+				</div>
+			{/foreach}
+            </div><!-- end .section -->
+            <!-- <a href="{$basedomain}register" class="btn">NEXT</a> -->
+            <input type="submit" name="submit" class="btn buttonnextok" value="FINISH"  style="display:none" />
+			<input type="hidden" value="{$sourceid}" name="sourceid"/> 
+        </form>
+   </div><!-- end #content -->
+</div><!-- end #container -->	
+
+	<script>
+
+	
+		var maxtrivia = '{$triviaQuiz|@count}';
+		//var maxtrivia = 2;
+	{literal}
+		$(document).ready(function(){		
+			$(".allboxquestion").hide();
+			$(".questionbox_"+0).show();
+			
+		});
+		
+		$(document).on('click','.choicemeeplease',function(){
+			var nextquestionid = parseInt($(this).attr('nextquestionid'),10);			
+			var thenextidquestion = nextquestionid+1;
+			if(nextquestionid>=maxtrivia-1)$( ".buttonnextok").show();
+			if(thenextidquestion>=maxtrivia){
+				var theid =$(this).val();
+				$('.radio').attr('style','background-position: 0px 0px');
+				$( "#ans_"+theid).siblings('.radio').attr('style','background-position: 0px -50px');
+				
+				return false;
+			
+			}
+			$(".allboxquestion").hide();
+				$(".questionbox_"+thenextidquestion).show();
+			
+		});  
+		
+		$(document).on('click','.radio',function(){
+			
+			var nextquestionid = parseInt($(this).siblings('.choicemeeplease').attr('nextquestionid'),10);			
+			var thenextidquestion = nextquestionid+1;
+			
+			
+			
+			if(thenextidquestion==maxtrivia){
+				$( ".buttonnextok").show();
+				return false;
+			}else{
+			
+			$(".allboxquestion").hide();
+			$(".questionbox_"+thenextidquestion).show();
+			}
+		});
+	</script>
+{/literal}

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/lib/Predis/PubSub
+END
+DispatcherLoop.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/lib/Predis/PubSub/DispatcherLoop.php
+END
+PubSubContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/lib/Predis/PubSub/PubSubContext.php
+END

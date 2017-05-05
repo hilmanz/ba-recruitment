@@ -1,0 +1,10 @@
+<div id="container">
+   <div id="content">
+        <form class="quizForm" action="">
+            <div class="section">
+                <h1 class="red">THANK YOU!</h1>
+                <label><h3>YOU ARE PROVEN AS A DECISIVE PERSON AND HAVE MADE IT INTO OUR LIST. </h3></label>
+            </div><!-- end .section -->
+        </form>
+   </div><!-- end #content -->
+</div><!-- end #container -->

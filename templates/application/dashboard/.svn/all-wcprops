@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard
+END
+login_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard/login_message.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard/footer.html
+END
+meta.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard/meta.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard/header.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard/home.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard/login.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/templates/application/dashboard/master.html
+END

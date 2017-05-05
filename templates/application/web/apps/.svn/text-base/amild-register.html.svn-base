@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="js rgba boxshadow csstransitions" xmlns="http://www.w3.org/1999/xhtml">
+<link type="text/css" href="{$basedomain}assets/css/a360.css" rel="stylesheet" />
+<meta charset="utf-8" />
+<meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+<meta name="keywords" content="social media monitoring, social media monitoring indonesia,media monitoring indonesia,sentiment analysis bahasa indonesia,sonar media monitoring,sonar social media monitoring" />
+<meta name="robots" content="index,all"/>
+<meta name="revisit-after" content="3 Days"/>
+<link type="text/css" href="{$basedomain}assets/css/superfish.css" rel="stylesheet" />
+<link type="text/css" href="{$basedomain}assets/fonts/roboto.css" rel="stylesheet" />
+<link type="text/css" href="{$basedomain}assets/css/video.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="{$basedomain}assets/js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<link rel="stylesheet" href="{$basedomain}assets/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{$basedomain}assets/css/skins/tango/skin.css" type="text/css" media="screen" />
+<link type="text/css" href="{$basedomain}assets/css/responsive.css" rel="stylesheet" />
+<!-- Add jQuery library -->
+<script type="text/javascript" src="{$basedomain}assets/js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/number_only.js"></script>
+<!-- JS PLUGIN -->
+<script src="{$basedomain}assets/js/jquery.gradienttext-0.1.min.js"></script>
+<script src="{$basedomain}assets/js/customform.js"></script>
+<script src="{$basedomain}assets/js/video.js"></script>
+<script>
+{literal}
+_V_.options.flash.swf = "{$basedomain}assets/js/video-js.swf";
+</script>
+{/literal}
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.validate.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.effects.core.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.effects.shake.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.jcarousel.min.js"></script>
+
+<!-- Modernizr -->
+<script src="{$basedomain}assets/js/modernizr.js"></script>
+<script src="{$basedomain}assets/js/marlboro-req.js"></script>
+{literal}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-867847-56', 'bc-sba.com');
+  ga('send', 'pageview');
+
+</script>
+
+{/literal}
+<title>Brightcom Creative Communication.</title>
+<!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+
+<script>
+	var basedomain = "{$basedomain}" ;
+	var pages = "{$pages}" ;
+	var locale = {$locale|@json_encode} ;
+	var lifetime = "{$lifetime}";
+	var isLogin = "{$isLogin}";	
+
+</script><link type="text/css" href="{$basedomain}assets/css/a360.css" rel="stylesheet" />
+<div class="brandambasador">
+	<div id="body" class="wrapper">
+		<div id="brandambasadorPage">
+			<div class="section">
+				<div class="bgFormPaper" style="min-height:294px;">
+					<div class="entryForm">
+						<h1 class="logoAmild" style="text-shadow: 0px 0px 1px rgb(102, 102, 102); background:none; padding:0;">Welcome To Brightcomm</h1>
+                        <h3>Thanks for playing!</h3>
+                        <h2>Saat ini periode registrasi Brand Ambassador Amild telah berakhir. Kamu dapat terus memainkan A Creator's personality Quiz untuk mengumpulkan poin yang dapat ditukar dengan merchandise menarik dari Amild. </h2>
+                        
+                        {*}
+                        <p>Daftarkan diri kamu sekarang! Masukkan email dan no telepon kamu. Start your journey</p>
+						<form action="" method="POST">
+                            <div class="row">
+                                <label>Name</label>
+                                <input type="text" name="name" id="name_amild" value="{$name}" />
+                            </div>
+                            <div class="row">
+                                <label>Email</label>
+                                <input type="text" name="email" id="email_amild" value="{$email}" />
+                            </div>
+							<div class="row rowSelect">
+								<label>City</label>
+                                <div class="inSelect">
+                                <select name="city" class="styled" id="city_amild">
+                                    <option value="" selected> - </option>
+                                    {section name=i loop=$loadCities}
+                                    <option value="{$loadCities[i].id}" >{$loadCities[i].city}</option>
+                                    {/section}
+                                </select> 
+                                </div>
+							</div>
+							<!-- <div class="row">
+								<label>Province</label>
+								<input type="text" name="province" id="province" value="{$province}" />
+							</div> -->
+                            <div class="row">
+                                <label>Phone</label>
+                                <input type="text" name="phone" id="phone_amild" value="{$phone}" onkeypress="return numbersonly(event);" />
+                            </div> 
+							<div class="row">
+								<label>Are you smoker ?</label>
+                                <div class="inSelect">
+                                    <input class="checkradio" type="radio" name="brandticker" value="YES" />
+                                    <span class="labelCheck labelText">YES</span>
+                                    
+                                    <input class="checkradio" type="radio" name="brandticker" value="NO" />
+                                    <span class="labelCheck labelText">NO</span>
+                                </div>
+							</div>
+							<div class="branddiv" style="display:none;">
+								<label>Brand</label>
+								<input type="text" name="brandsmoke" id="brandsmoke" value="{$brandsmoke}" />
+							</div>
+                            <div class="row">
+                                <label>Twitter :</label>
+                                <span class="attwit">@</span>
+                                <input type="text" name="twitter" class="twitterField" id="twitter_amild" value="{$twitter}" />
+                            </div>
+                            <!--div class="row">
+                                <a href="javascript:void(0);" class="iconUpload foto_register">UPLOAD PHOTO</a>
+                                <div class="upload_registrasi"></div>
+                            </div-->
+                            <div class="row msg_Registrasi"></div>
+                            <div class="branddiv">
+							<h4 style="margin:0;">Smoker Statement</h4>
+                            </div>
+							<div class="row branddiv">
+                                <input type="checkbox" class="styled" id="check_smoker"/>
+                                <span class="agreeText"> Saya adalah perokok berusia diatas 19 tahun berminat untuk menerima materi promosi dan informasi tentang peluncuran produk, perubahan kemasan, acara, kegiatan pemasaran dan peraturan produk tembakau.</span>
+                            </div>
+                            <h4 style="margin:0;">Syarat Ketentuan</h4>
+                            <div class="row">
+                                <input type="checkbox" class="styled" id="check_register"/>
+                                <span class="agreeText"> Bagi Anda yang mendaftarkan diri dan memenuhi kriteria akan mengikuti serangkaian proses penilaian, dimana jika terpilih Anda akan bekerja untuk PT. Brightcomm dan menjalankan tugas dalam Brand Ambassador program untuk klien kami, (PT. HM Sampoerna Tbk) </span>
+                            </div>
+                            <div class="row rowSubmit">
+								<a class="doPostRegister"><input type="submit" value="SUBMIT" name="submit"/></a>
+                                <input type="hidden" value="{$pages}" name="sourceid"/> 
+                                <input type="hidden" value="{$uid}" name="uid"/> 
+                            </div>
+                            <div class="popup">
+                            	<div id="popupSyarat" class="popupContainers">
+                                            <h1>SYARAT DAN KETENTUAN</h1>
+                            <p>Situs ini milik <strong>PT HM SAMPOERNA. (“SAMPOERNA”)</strong> dan dioperasikan oleh PT HM SAMPOERNA. Di semua bagian dari situs ini, kata "kami" mengacu kepada <strong>PT HM SAMPOERNA</strong>. Dengan menggunakan situs ini, Anda menyetujui Syarat dan Ketentuan ini. Apabila Anda tidak setuju dengan Syarat Penggunaan ini, Anda tidak boleh menggunakan situs ini.</p>
+                            <p> </p>
+                          <p><strong>Penggunaan Situs ini oleh Anda</strong></p>
+                            <p>Situs ini dimaksudkan semata-mata untuk perokok yang berusia <strong>18 tahun</strong> atau lebih yang bertempat tinggal di <strong>Indonesia</strong>, telah mendaftar pada database perokok dewasa kami untuk mendapatkan berbagai komunikasi dan materi promosi yang terkait dengan produk-produk tembakau kami dan masalah-masalah yang terkait dengan tembakau melalui sarana elektronik atau sarana lainnya (termasuk surat elektronik, surat, SMS, MMS), dan telah diundang melalui SMS atau surat elektronik untuk mengunjungi situs ini, serta ingin berpartisipasi dalam penawaran(-penawaran) khusus yang terdapat dalam situs ini. </p>
+                            
+                          <p> </p>
+                          <p><strong>Penggunaan Materi dari Situs ini</strong></p>
+                            <p>Situs ini dan semua isinya (termasuk namun tidak terbatas pada piranti lunak, berkas, gambar dan data) adalah hak milik <strong>PT HM SAMPOERNA</strong>, perusahaan-perusahaan afiliasinya, atau para pemberi lisensinya dan dilindungi oleh undang-undang hak cipta, merek dagang, dan undang-undang lainnya di <strong>Indonesia</strong> dan negara-negara lainya. Kecuali apabila ditentukan lain, situs ini disediakan semata-mata untuk penggunaan pribadi Anda. Penggunaan lainnya atas materi-materi dalam situs ini termasuk namun tidak terbatas pada:</p>
+                            
+                          <p> </p>
+                          <p>i. menggunakan situs ini terkait dengan suatu bisnis; 
+                            <br>ii. mengubah, mendistribusikan, mengirimkan, melaksanakan, menyiarkan, memperbanyak, mempublikasikan, memberikan izin, atau melakukan rekayasa terbalik atas materi, informasi, piranti lunak, produk atau jasa apa pun yang diperoleh dari situs ini; atau
+                            <br>iii. membuat, mengalihkan atau menjual karya-karya derivatif dari materi, informasi, piranti lunak, produk atau jasa apa pun yang diperoleh dari situs ini tanpa izin tertulis terlebih dahulu dari <strong>PT HM SAMPOERNA</strong>, secara tegas dilarang. </p>
+                          <p> </p>
+                          <p><strong>Informasi yang Anda Berikan </strong></p>
+                            <p>Anda mengakui bahwa Anda bertanggung jawab atas setiap informasi yang Anda berikan pada situs ini, termasuk keakuratan, keabsahan, kehandalan, dan kesesuaian dari semua informasi tersebut. </p>
+                            
+                          <p> </p>
+                          <p><strong>Pembatasan Tanggung Jawab </strong></p>
+                            <p>Risiko dari penggunaan situs ini oleh Anda merupakan tanggung jawab Anda sendiri. Situs ini disediakan atas dasar "sebagaimana adanya" dan "sebagaimana yang tersedia". <strong>PT HM SAMPOERNA</strong> dan pihak-pihak afiliasinya secara tegas melepas tanggung jawab atas semua jenis jaminan, baik yang dinyatakan secara tegas maupun tersirat, termasuk namun tidak terbatas kepada jaminan tersirat tentang kelayakan jual dan kesesuaian untuk tujuan tertentu dan jaminan apa pun bahwa materi-materi yang terdapat dalam situs ini tidak melanggar hak cipta; bahwa akses terhadap situs ini tidak akan mengalami gangguan atau bebas dari kesalahan; bahwa situs ini akan aman; bahwa situs ini atau server-server yang digunakan untuk penyediaan situs ini akan bebas dari virus; atau bahwa informasi yang terdapat dalam situs ini akan bersifat lengkap, akurat, atau tepat waktu. <strong>Ketentuan ini juga berlaku bagi semua hadiah yang diberikan sesuai dengan Syarat dan Ketentuan (“mekanisme”). </strong>. Apabila Anda mengunduh materi apa pun dari situs ini, Anda melakukannya atas kebijaksanaan dan risiko Anda sendiri. Setiap kerusakan pada sistem komputer Anda atau kehilangan data yang disebabkan oleh pengunduhan materi tersebut akan menjadi tanggung jawab Anda semata-mata. Selain itu, Anda menanggung seluruh biaya untuk semua servis, reparasi atau perbaikan yang diperlukan.</p>
+                            
+                          <p> </p>
+                          <p><strong>Pembatasan Tanggung Jawab</strong></p>
+                            <p>Sejauh yang diperbolehkan berdasarkan undang-undang yang berlaku, Anda memahami dan menyetujui bahwa baik <strong>PT HM SAMPOERNA</strong> maupun perusahaan-perusahaan afiliasi, anak-anak perusahaan atau penyedia konten pihak ketiganya masing-masing bertanggung jawab atas ganti rugi yang bersifat langsung, tidak langsung, insidentil, khusus, yang merupakan contoh, yang merupakan akibat, yang bersifat hukuman (punitive) atau kerugian lainnya yang terkait dengan atau disebabkan oleh penggunaan atau tidak dapat digunakannya situs ini oleh Anda atau karena setiap tindakan yang kami lakukan atau kelalaian kami untuk melakukan tindakan sebagai akibat dari komunikasi Anda dengan kami. Ganti rugi tersebut termasuk ganti rugi untuk kesalahan, kelalaian, gangguan, kecacatan, keterlambatan, virus komputer, kehilangan keuntungan, kehilangan data yang Anda alami, akses tanpa izin terhadap atau perubahan atas transmisi dan data Anda, serta kerugian-kerugian berwujud dan tidak berwujud lainnya. Pembatasan ini berlaku tanpa memperhatikan apakah ganti rugi tersebut diklaim berdasarkan ketentuan-ketentuan kontrak, sebagai akibat dari kelalaian atau dengan cara lain timbul karena atau terkait dengan penggunaan, tidak dapat digunakannya, atau performa dari informasi, jasa-jasa, produk-produk atau materi-materi yang tersedia di situs ini, dan bahkan apabila kami atau perwakilan kami telah melalaikan atau telah diberitahu tentang kemungkinan timbulnya kerugian tersebut. </p>
+                            
+                          <p> </p>
+                          <p><strong>Ganti Rugi</strong></p>
+                            <p>Anda setuju untuk memberi ganti rugi, membela dan melindungi <strong>PT HM SAMPOERNA</strong> dan setiap afiliasi atau anak perusahaannya, dan para pejabat, direktur, karyawan, agen, pemberi lisensi dan pemasoknya masing-masing dari dan terhadap semua kerugian, kewajiban, pengeluaran, ganti rugi dan biaya, termasuk biaya pengacara dan ongkos pengadilan yang wajar, yang timbul karena atau disebabkan oleh pelanggaran apa pun terhadap Syarat dan Ketentuan ini (termasuk tetapi tidak terbatas kepada kelalaian atau kesalahan) oleh Anda atau orang lain yang mengakses situs ini dengan menggunakan akun internet Anda. Apabila Anda menyebabkan terjadinya gangguan teknis pada situs ini atau sistem-sistem yang mentransmisikan situs ini kepada Anda atau orang lain, Anda setuju untuk bertanggung jawab atas setiap dan semua kerugian, kewajiban, pengeluaran, kerugian dan biaya, termasuk biaya pengacara dan ongkos pengadilan yang wajar, yang timbul karena atau disebabkan oleh gangguan tersebut.</p>
+                            
+                          <p> </p>
+                          <p><strong>Jurisdiksi</strong></p>
+                            <p><strong>PT HM SAMPOERNA</strong> didirikan sebagai badan hukum di <strong>Indonesia</strong>, dan situs ini dioperasikan oleh <strong>PT HM SAMPOERNA</strong> untuk digunakan di <strong>Indonesia</strong>. Hukum <strong>Indonesia</strong> mengatur Syarat Penggunaan ini dan penggunaan situs ini oleh Anda dan Anda secara tanpa dapat dicabut kembali menyetujui jurisdiksi eksklusif dari pengadilan-pengadilan yang berlokasi di <strong>Indonesia</strong> untuk setiap tindakan hukum untuk memberlakukan Syarat Penggunaan ini. Kami mengakui bahwa Anda mungkin mendapatkan akses kepada situs ini dari jurisdiksi mana pun di dunia, namun kami tidak memiliki kemampuan praktis untuk mencegah akses tersebut. Situs ini dirancang untuk mematuhi hukum <strong>Indonesia</strong>. Kegiatan-kegiatan usaha yang dilakukan oleh afiliasi-afiliasi <strong>PT HM SAMPOERNA</strong> beroperasi di berbagai negara di seluruh dunia dan mematuhi hukum dari jurisdiksi-jurisdiksi tertentu di mana perusahaan-perusahaan tersebut beroperasi. Apabila materi apa pun dalam situs ini, atau penggunaan situs ini oleh Anda, bertentangan dengan hukum di tempat di mana Anda berada ketika Anda mengakses situs ini, maka situs ini tidak ditujukan untuk Anda, dan kami meminta Anda untuk tidak menggunakan situs ini. Anda bertanggung jawab untuk mencari tahu sendiri tentang hukum di jurisdiksi Anda dan mematuhi hukum tersebut.</p>
+                            
+                          <p> </p>
+                          <p><strong>PERNYATAAN PRIVASI KAMI </strong></p>
+                            <p>Kami yang bekerja di <strong>PT HM SAMPOERNA</strong> menghormati privasi konsumen kami. Kami berkomitmen untuk melindungi dengan baik informasi pribadi yang Anda berikan kepada kami ketika Anda mengunjungi dan menggunakan situs ini. Pernyataan Privasi ini menjelaskan jenis-jenis informasi pribadi yang kami kumpulkan melalui situs ini, cara kami menggunakannya dan dengan pihak mana kami dapat berbagai informasi tersebut. Pernyataan Privasi kami juga menjelaskan langkah-langkah yang kami ambil untuk melindungi keamanan informasi tersebut.</p>
+                            
+                          <p> </p>
+                          <p><strong>Informasi yang Kami Kumpulkan dan Cara Kami Menggunakannya </strong></p>
+                            <p>Agar dapat mendaftar pada database konsumen dewasa kami, Anda harus merupakan perokok yang berusia <strong>18 tahun</strong> atau lebih, tinggal di <strong>Indonesia</strong>, dan Anda harus memberikan kepada kami informasi pribadi Anda seperti nama, alamat dan tanggal lahir Anda. Anda juga dapat memilih untuk memberikan kepada kami informasi pribadi lainnya (seperti data survei) dan informasi kontak Anda (seperti nomor telepon genggam atau alamat surat elektronik Anda) sehingga kami dapat berkomunikasi dengan Anda. Kami juga akan memperoleh informasi tentang Anda yang tersedia bagi kami dari pihak-pihak ketiga atau instansi-instansi pemerintah untuk memverifikasikan informasi yang telah Anda berikan kepada kami di situs ini dan kami juga dapat menambahkan informasi yang Anda berikan kepada kami dengan data kependudukan atau gaya hidup sehingga kami dapat menyesuaikan penawaran kami sehingga lebih sesuai untuk Anda. Pada saat Anda mengunjungi situs kami, browser Anda secara otomatis mengirimkan kepada kami alamat IP (Internet Protocol) dan informasi tertentu lainnya (seperti jenis browser yang Anda gunakan). Kami tidak menggunakan client-side cookies untuk menyimpan informasi pribadi dan informasi akses Anda.</p>
+                            
+                          <p> </p>
+                          <p><strong>Informasi yang Kami Kumpulkan dan Cara Kami Menggunakannya</strong></p>
+                            <p><strong>PT HM SAMPOERNA</strong> tidak menjual atau dengan cara lain mengungkapkan informasi pribadi yang kami kumpulkan tentang Anda di situs ini kepada pihak ketiga mana pun untuk keperluan pemasaran mereka sendiri. Namun, kami mengungkapkan informasi tersebut kepada perusahaan afiliasi kami Philip Morris International Management SA, dan kepada penyedia-penyedia jasa yang kami pekerjakan untuk memberikan jasa atas nama kami. Para penyedia jasa tersebut dilarang berdasarkan kontrak untuk menggunakan atau mengungkapkan informasi tersebut kecuali sebagaimana yang diperlukan untuk menyediakan jasa-jasa atas nama kami. <strong>PT HM SAMPOERNA</strong>, para penyedia jasanya dan Philip Morris International Management SA, juga dapat mengungkapkan informasi tentang Anda apabila diwajibkan berdasarkan undang-undang.</p>
+                            
+                          <p> </p>
+                          <p><strong>Cara Kami Melindungi Informasi Pribadi </strong></p>
+                            <p>Keamanan informasi pribadi merupakan prioritas utama bagi kami. Kami mengadakan pengamanan administratif, teknis dan fisik sebagaimana mestinya yang dirancang untuk melindungi terhadap pengungkapan, penggunaan, perubahan, dan penghancuran tanpa izin, terhadap informasi pribadi yang Anda berikan kepada kami ketika Anda mengunjungi dan menggunakan situs ini. Kami menggunakan secure socket layer (SSL) serta enkripsi sertifikat dan teknologi digital untuk membantu kami dalam mengamankan pentransmisian informasi pribadi Anda.</p>
+                    
+                        <p> </p>
+                        <p><strong>Cara untuk Menghubungi Kami</strong></p>
+                            <p>Anda dapat menghubungi kami dengan berbagai macam pertanyaan yang mungkin Anda ingin ajukan tentang Syarat dan Ketentuan serta Pernyataan Privasi ini dengan mengirimkan pertanyaan Anda melalui surat kepada PT. HM SAMPOERNA P.O. BOX 12190.</p>
+                                </div>
+                            </div>
+                        </form>
+                        {/*}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="footer">
+    <p>Copyright &copy; Brightcom Creative Communication.</p>
+    </div>
+</div><!-- END .body -->
+</html>
+
+<script>
+	{literal}
+	
+	$(document).on('click','.doPostRegister', function(){
+		var name = $('#name_amild').val();
+		var phone = $('#phone_amild').val();
+		var email = $('#email_amild').val();
+		var brandsmoke = $('#brandsmoke').val();
+		var twitter = $('#twitter_amild').val();
+		var city = $('#city_amild').val();
+		
+		if(!name){
+			var htm = "<font size=4 color=red>Name mohon di isi!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if(email){
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+				//wrong format	
+				var htm = "<font size=4 color=red>Email mohon di isi dengan benar!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>Email mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (!city) {
+			var htm = "<font size=4 color=red>city mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (phone) {
+			if(isNaN(phone)){
+				var htm = "<font size=4 color=red>No Telphone mohon di isi dengan angka!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>No Telphone mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if ($('.checkradio').is(':checked')){
+		
+		} else {
+			var htm = "<font size=4 color=red>Are You Smoker mohon di pilih!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (!twitter) {
+			var htm = "<font size=4 color=red>Account twitter mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if($('input[name="brandticker"]:checked').val()=="YES"){
+			if (!brandsmoke) {
+				var htm = "<font size=4 color=red>Brand mohon di isi</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} 
+		
+		
+		$('input[name="brandticker"]').on('change',function(){
+			if($(this).val()=='YES'){
+				if ($('#check_smoker').is(':checked')){
+			
+				} else {
+					var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+					$('.msg_Registrasi').html(htm);
+					return false;
+				}
+			}
+		});
+				
+		if ($('#check_register').is(':checked')){
+			
+		} else {
+			var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+	});
+	
+	
+	$('input[name="brandticker"]').on('change',function(){ 
+		if($(this).val()=='YES'){
+			$(".branddiv").show();
+		}else{
+			$(".branddiv").hide();
+		}
+		
+	});
+
+</script>
+{/literal} 

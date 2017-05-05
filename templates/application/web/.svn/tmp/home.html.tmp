@@ -1,0 +1,14 @@
+<div id="container">
+   <div id="content">
+        <div class="section">
+        	<h1 class="red">WELCOME TO BRIGHTCOMM!</h1>
+            <h3>WE ARE SEEKING/LOOKING FOR TRUE BELIEVERS<br /><span class="white">DO YOU HAVE WHAT IT TAKES TO BE PART OF MARLBORO? </span><br />
+            <span class="grey">IT'S TIME TO SHOW YOUR DETERMINATION FOR A NEW JOURNEY & PRICELESS EXPERIENCE.</span></h3>
+        </div><!-- end .section -->
+        <a href="
+		{$basedomain}
+		{if $sourceid=='marlboro'}trivia/?sourceid=marlboro{/if}
+		{if $sourceid=='amild'}amild{/if}
+		{if $sourceid==''}trivia{/if}" class="btn">START NOW!</a>
+   </div><!-- end #content -->
+</div><!-- end #container -->

@@ -1,0 +1,110 @@
+<div id="brandambasadorPage">
+{*}
+    <div class="breadcumb">
+        <a class="current">1</a>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+    </div>
+    {/*}
+    <div class="section">
+    	<div class="bgFormPaper">
+        	<div class="entryForm">
+            	<h1 class="logoAmild">CREATORS PROJECT</h1>
+                <h3>Form Registration</h3>
+                <p>Daftarkan diri kaMU sekarang! Masukkan email dan no telepon kaMU. Start your journey <br />to be A Mild Brand Ambassador!</p>
+            	<form class="reg-amb" method="POST" action="{$basedomain}brandambasador/register" enctype="multipart/form-data" >
+                	<div class="row">
+                    	<label>Email :</label>
+                        <input type="text" name="email" id="email_register" size="50" value="{$user->email}"/>
+                    </div>
+                	<div class="row">
+                    	<label>No Tel :</label>
+                        <input type="text" name="phone" id="phone_registrasi" value="{if $user->phone_number}{$user->phone_number}{/if}"/>
+                    </div>
+                	<div class="row">
+                    	<label>Twitter :</label>
+                        <input type="text" name="account_twitter" id="twitter" size="50"/>
+                    </div>
+                	<div class="row">
+                    	<a href="javascript:void(0);" class="iconUpload foto_register">UPLOAD PHOTO</a>
+						<div class="upload_registrasi"></div>
+                    </div>
+                	<div class="row msg_Registrasi"></div>
+                	<div class="row">
+                    	<input type="checkbox" id="check_register"/>
+                        <span> Saya telah menyetujui <a target="_blank" href="{$basedomain}tnc-upload-download.html">Syarat dan Ketentuan</a></span>
+                    	<a class="doPostRegister"><input type="submit" value="SUBMIT" name="submit"/></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- END .listPage -->
+
+<script>
+	{literal}
+	
+	$(document).on('click','.foto_register', function(){
+		var html ="";
+		html += "<input type='file' name='myImage' id='image_register'/>";
+		html += "<small class='inputinfo'> Ukuran file yang bisa diupload maksimum 1 MB , type file jpg,png</small>";
+		$('.upload_registrasi').html(html);
+	});
+	
+	$(document).on('click','.doPostRegister', function(){
+		var phone = $('#phone_registrasi').val();
+		var email = $('#email_register').val();
+		var twitter = $('#twitter').val();
+		var image_register = $('#image_register').val();
+		
+		if(email){
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+				//wrong format	
+				var htm = "<font size=4 color=red>Email mohon di isi dengan benar!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>Email mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (phone) {
+			if(isNaN(phone)){
+				var htm = "<font size=4 color=red>No Telphone mohon di isi dengan angka!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>No Telphone mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (!twitter) {
+			var htm = "<font size=4 color=red>Account twitter mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (!image_register) {
+			var htm = "<font size=4 color=red>Foto mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if ($('#check_register').is(':checked')){
+			
+		} else {
+			var htm = "<font size=4 color=red>"+localepages.cek.syarat+"</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+	});
+</script>
+{/literal}

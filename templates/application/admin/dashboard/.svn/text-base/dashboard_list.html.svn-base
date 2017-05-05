@@ -1,0 +1,117 @@
+
+<div class="theContent" width="100%">
+    <div class="theTitle">
+        <h2>Registrasi BA</h2>
+        <a href="index.php?act=getRegistrasiBAReport&refer_from={$refer_from}&location={$location}&startdate={$startdate}&enddate{$enddate}" class="btn btn_document"><span>Download XLS</span></a>
+    </div><!--contenttitle-->
+    <div>
+        <h2>Total&nbsp;&nbsp;&nbsp;   {$totRegister}</h2>
+    </div><!--contenttitle-->
+    <div class="tableoptions">
+			<form>
+				<select name="refer_from">
+					<option value=""> - Refer From - </option>
+					<option value="marlboro" {if $refer_from==marlboro} selected {/if}> Marlboro </option>
+					<option value="amild" {if $refer_from==amild} selected {/if}> Amild </option>
+				</select>
+				<select name="location">
+					<option value=""> - Location - </option>
+					{if $getLocation}
+						{section name=i loop=$getLocation}
+						{if $getLocation[i].id == $location}<option value="{$getLocation[i].id}" selected>{$getLocation[i].city}</option>
+						{else}<option value="{$getLocation[i].id}">{$getLocation[i].city}</option>
+						{/if}
+						{/section}
+					{/if}
+				</select>
+				<span>&nbsp;Date Range&nbsp;</span>
+				<input type="text" name="startdate" value="{$startdate}" class="datepicker"/>
+				<span> &nbsp;to&nbsp; </span>	
+				<input type="text" name="enddate" value="{$enddate}" class="datepicker"/>&nbsp;
+				<input type="submit" value="search" class="stdbtn btn_orange">
+			</form>
+    </div><!--tableoptions-->	
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <colgroup>
+            <col class="con0" style="width: 4%" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="head0">No</th>
+                <th>Name</th>
+                <th>Project Name</th>
+                <th width="45%">Description</th>
+                <th>Reference Image</th>
+                <th class="">Email</th>
+                <th class="">Phone</th>
+                <th class="">Account Twitter</th>
+                <th class="">Location</th>
+                <th class="">Point</th>
+                <th class="">Smoke / Not</th>
+                <th class="">Brand Preference</th>
+                <th class="">Date Submit</th>
+                <th class="">Refer From</th>
+            </tr>
+        </thead>
+        <tbody>
+            {section name=i loop=$list}
+            <tr>
+                <td width="3%">{$list[i].no}&nbsp;</td>
+                <td>{$list[i].name|capitalize}&nbsp;</td>
+                <td>{$list[i].projectname}&nbsp;</td>
+                <td align="center">
+					{if $list[i].details}
+					<a class="showPopup" href="#detail-{$list[i].no}" style="color:red;">Detail description</a><div style="display:none; width:500px; padding:30px;text-align:justify;" id="detail-{$list[i].no}">{$list[i].details}</div>
+					{/if}
+				</td>
+                <td>
+					{if $list[i].image1 || $list[i].image2 || $list[i].image3}
+					<a class="showPopup" href="#image-{$list[i].no}-1">
+						<img src="https://www.amild.com/public_assets/brandambasador/{$list[i].image1}" width="70"/>
+					</a>
+					<div style="display:none; padding:30px;text-align:center;" id="image-{$list[i].no}-1">
+						<img style="max-width:900px;" src="https://www.amild.com/public_assets/brandambasador/{$list[i].image1}"/>
+					</div>&nbsp;&nbsp;
+					<a class="showPopup" href="#image-{$list[i].no}-2">
+						<img src="https://www.amild.com/public_assets/brandambasador/{$list[i].image2}" width="70"/>
+					</a>
+					<div style="display:none; padding:30px;text-align:center;" id="image-{$list[i].no}-2">
+						<img style="max-width:900px;" src="https://www.amild.com/public_assets/brandambasador/{$list[i].image2}"/>
+					</div>&nbsp;&nbsp;
+					<a class="showPopup" href="#image-{$list[i].no}-3">
+						<img src="https://www.amild.com/public_assets/brandambasador/{$list[i].image3}" width="70"/>
+					</a>
+					<div style="display:none; padding:30px;text-align:center;" id="image-{$list[i].no}-3">
+						<img style="max-width:900px;" src="https://www.amild.com/public_assets/brandambasador/{$list[i].image3}"/>
+					</div>&nbsp;&nbsp;
+					{else}
+						<a class="showPopup" href="#image-{$list[i].no}">
+							<img src="http://www.bc-sba.com/assets/images/default.jpg" width="70"/>
+						</a>
+						<div style="display:none; padding:30px;text-align:justify;" id="image-{$list[i].no}">
+							<img style="max-width:900px;" src="http://www.bc-sba.com/assets/images/default.jpg"/>
+						</div>
+					{/if}
+				</td>
+                <td>{$list[i].email}</td>
+                <td>{$list[i].phone_number}</td>
+                <td>{if $list[i].twitter_account}@{$list[i].twitter_account}{else}{/if}</td>
+                <td>{$list[i].city}</td>
+                <td align="center">{if $list[i].point}{$list[i].point}{elseif $list[i].point_amild}{$list[i].point_amild}{else}-{/if}</td>
+                <td align="center">{if $list[i].brand_reference} Yes {else} Not {/if}</td>
+                <td>{$list[i].brand_reference}</td>
+                <td><nobr>{$list[i].register_date|date_format:"%d-%m-%Y"} &nbsp;{$list[i].register_date|date_format:$time.time}</nobr></td>
+                <td>{$list[i].sourceid|capitalize}</td>
+            </tr>
+            {/section}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->

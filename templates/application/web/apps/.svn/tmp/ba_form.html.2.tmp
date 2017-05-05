@@ -1,0 +1,365 @@
+<<<<<<< .mine
+<div id="container">
+   <div id="content">
+        <form class="quizForm dataForm" action="" method="POST">
+            <div class="section">
+                    <h2 class="red">COMPLETE YOUR DETAILS</h2>
+                    <h4>YOU'RE ONE STEP CLOSER TO GET INTO OUR LIST.<br />PLEASE FILL IN ALL THE REQUIRED FIELDS BELOW AND YOU'RE GOOD TO GO! </h4>
+                    <div class="row">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name_marlboro" value="{$name}" />
+                    </div>
+                    <div class="row">
+                    <label>Email</label>
+                    <input type="mail" name="email" id="email_marlboro" value="{$email}"  />
+                    </div>
+                    <div class="row">
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="phone_marlboro" value="{$phone}" onkeypress="return numbersonly(event);" />
+                    </div>
+					<div class="row">
+                    <label>City</label>
+					<select class="citySelect" name="city" id="city_marlboro">
+						<option value="" selected> - </option>
+						<option value="215" >Jakarta</option>
+						<option value="140" >Bandung</option>
+						<option value="451" >Yogyakarta</option>
+						<option value="407" >Surabaya</option>
+						<option value="199" >Denpasar</option>
+						<option value="292" >Medan</option>
+						<option value="278" >Makasar</option>
+					</select> 
+					{*}
+					<select class="citySelect" name="city" id="city_marlboro">
+						<option value="" selected> - </option>
+						{section name=i loop=$loadCities}
+						<option value="{$loadCities[i].id}" >{$loadCities[i].city}</option>
+						{/section}
+					</select> 
+                    {/*}
+					</div>
+					<div class="row">
+                    <label>Are you smoker ?</label>
+                    
+                    <input class="checkradio" type="radio" name="brandticker" value="YES" />
+                    <label class="labelCheck">YES</label>
+                    
+                    <input class="checkradio" type="radio" name="brandticker" value="NO" />
+                    <label class="labelCheck">NO</label>
+                    </div>
+					<div class="branddiv" style="display:none;">
+						<label>Brand</label>
+						<input type="text" name="brandsmoke" id="brandsmoke" value="{$brandsmoke}" />
+					</div>
+                    <div class="row">
+                    <label>Twitter</label>
+					<span class="attwit">@</span>
+                    <input type="text" name="twitter" class="twitterField" id="twitter_marlboro" value="{$twitter}" />
+                    </div>
+            </div><!-- end .section -->
+			 <div class="row msg_Registrasi"></div>
+             <div class="row agreeTerm branddiv">
+             	<h5 style="margin:0;">Pernyataan Perokok:</h5>
+             </div>
+            <div class="row agreeTerm branddiv">
+            	<input type="checkbox" class="styled check_register" />
+                <h5>Saya adalah perokok dewasa berusia 19 tahun atau lebih, berminat untuk menerima materi promosi dan informasi tentang peluncuran produk, perubahan kemasan, acara, kegiatan pemasaran dan peraturan produk tembakau.</h5>
+            </div>
+            <div class="row agreeTerm">
+             	<h5 style="margin:0;">Syarat dan Ketentuan:</h5>
+             </div>
+            <div class="row agreeTerm">
+            	
+            	<input type="checkbox" class="styled check_nba" />
+                <h5>Saya telah membaca <a href="#agreement" class="showPopup">Syarat dan Ketentuan</a> yang berlaku</h5>
+                <div class="popup">
+                	<div id="agreement" class="popupContainers">
+                	<h1>Syarat dan Ketentuan</h1>
+<h3>Bagi Anda yang mendaftarkan diri dan memenuhi kriteria akan mengikuti serangkaian proses penilaian, dimana jika terpilih Anda akan bekerja untuk PT. Brightcomm dan menjalankan tugas dalam Brand Ambassador program untuk klien kami, (PT HM Sampoerna, Tbk.)</h3>
+					</div>
+                </div>
+            </div>
+			<a class="doPostRegister"><input type="submit" class="btn" value="SUBMIT" name="submit"/></a>
+			<!-- <input type="submit" name="submit" class="btn" value="SUBMIT" > -->
+			<input type="hidden" value="{$sourceid}" name="sourceid"/> 
+			<input type="hidden" value="{$id_trivia}" name="id_trivia"/> 
+			<!-- <input type="hidden" value="{$id_trivia}" name="id_trivia"/>  -->
+        </form>
+   </div><!-- end #content -->
+</div><!-- end #container -->
+<script language="javascript">
+{literal}	 
+	$(function () {
+			$("#name_marlboro").watermark( "Your Name", { useNative: false } );
+			$("#email_marlboro").watermark( "Your@email.com", { useNative: false } );
+			$("#phone_marlboro").watermark( "Your Phone Number", { useNative: false } );
+		});
+
+	$(document).on('click','.doPostRegister', function(){
+		var name = $('#name_marlboro').val();
+		var phone = $('#phone_marlboro').val();
+		var email = $('#email_marlboro').val();
+		var twitter = $('#twitter_marlboro').val();
+		var city = $('#city_marlboro').val();
+		var checkradio = $('.checkradio').val();
+		
+		if(!name){
+			var htm = "<font size=4 color=red>Name mohon di isi!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if(email){
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+				//wrong format	
+				var htm = "<font size=4 color=red>Email mohon di isi dengan benar!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>Email mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (phone) {
+			if(isNaN(phone)){
+				var htm = "<font size=4 color=red>No Telphone mohon di isi dengan angka!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>No Telphone mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (twitter=='@') {
+			var htm = "<font size=4 color=red>Account twitter mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (city=='') {		
+			var htm = "<font size=4 color=red>city mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		$('input[name="brandticker"]').on('change',function(){
+			if($(this).val()=='YES'){
+				if ($('.check_register').is(':checked')){
+					
+				} else {
+					var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+					$('.msg_Registrasi').html(htm);
+					return false;
+				}
+			}
+		});
+		
+		if ($('.check_nba').is(':checked')){
+			
+		} else {
+			var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+	});
+	
+	$('input[name="brandticker"]').on('change',function(){
+		if($(this).val()=='YES'){
+			$(".branddiv").show();
+		}else{
+			$(".branddiv").hide();
+		}
+		
+	});
+
+</script>
+=======
+<div id="container">
+   <div id="content">
+        <form class="quizForm dataForm" action="" method="POST">
+            <div class="section">
+                    <h2 class="red">COMPLETE YOUR DETAILS</h2>
+                    <h4>YOU'RE ONE STEP CLOSER TO GET INTO OUR LIST.<br />PLEASE FILL IN ALL THE REQUIRED FIELDS BELOW AND YOU'RE GOOD TO GO! </h4>
+                    <div class="row">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name_marlboro" value="{$name}" />
+                    </div>
+                    <div class="row">
+                    <label>Email</label>
+                    <input type="mail" name="email" id="email_marlboro" value="{$email}"  />
+                    </div>
+                    <div class="row">
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="phone_marlboro" value="{$phone}" onkeypress="return numbersonly(event);" />
+                    </div>
+					<div class="row">
+                    <label>City</label>
+					<select class="citySelect" name="city" id="city_marlboro">
+						<option value="" selected> - </option>
+						<option value="215" >Jakarta</option>
+						<option value="140" >Bandung</option>
+						<option value="451" >Yogyakarta</option>
+						<option value="407" >Surabaya</option>
+						<option value="199" >Denpasar</option>
+						<option value="292" >Medan</option>
+						<option value="278" >Makasar</option>
+					</select> 
+					{*}
+					<select class="citySelect" name="city" id="city_marlboro">
+						<option value="" selected> - </option>
+						{section name=i loop=$loadCities}
+						<option value="{$loadCities[i].id}" >{$loadCities[i].city}</option>
+						{/section}
+					</select> 
+                    {/*}
+					</div>
+					<div class="row">
+                    <label>Are you smoker ?</label>
+                    
+                    <input class="checkradio" type="radio" name="brandticker" value="YES" />
+                    <label class="labelCheck">YES</label>
+                    
+                    <input class="checkradio" type="radio" name="brandticker" value="NO" />
+                    <label class="labelCheck">NO</label>
+                    </div>
+					<div class="branddiv" style="display:none;">
+						<label>Brand</label>
+						<input type="text" name="brandsmoke" id="brandsmoke" value="{$brandsmoke}" />
+					</div>
+                    <div class="row">
+                    <label>Twitter</label>
+					<span class="attwit">@</span>
+                    <input type="text" name="twitter" class="twitterField" id="twitter_marlboro" value="{$twitter}" />
+                    </div>
+            </div><!-- end .section -->
+			 <div class="row msg_Registrasi"></div>
+             <div class="row agreeTerm branddiv">
+             	<h5 style="margin:0;">Pernyataan Perokok:</h5>
+             </div>
+            <div class="row agreeTerm branddiv">
+            	<input type="checkbox" class="styled check_register" />
+                <h5>Saya berumur 19 tahun atau lebih dan perokok. Berminat untuk menerima  materi promosi dan informasi tentang peluncuran merek, perubahan kemasan, acara, kegiatan, pemasaran, dan peraturan produk tembakau 
+</h5>
+            </div>
+            <div class="row agreeTerm">
+             	<h5 style="margin:0;">Syarat dan Ketentuan:</h5>
+             </div>
+            <div class="row agreeTerm">
+            	
+            	<input type="checkbox" class="styled check_nba" />
+                <h5>Bagi Anda yang mendaftarkan diri dan memenuhi kriteria akan mengikuti serangkaian proses penilaian, dimana jika terpilih Anda akan bekerja untuk PT. Brightcomm dan menjalankan tugas dalam Brand Ambassador program untuk klien kami,<br />(PT. Phillip Morris Indonesia).</h5>
+                <div class="popup">
+                	<div id="agreement" class="popupContainers">
+                	<h1>Syarat dan Ketentuan</h1>
+<h3>Bagi Anda yang mendaftarkan diri dan memenuhi kriteria akan mengikuti serangkaian proses penilaian, dimana jika terpilih Anda akan bekerja untuk PT. Brightcomm dan menjalankan tugas dalam Brand Ambassador program untuk klien kami, (PT. Phillip Morris Indonesia)</h3>
+					</div>
+                </div>
+            </div>
+			<a class="doPostRegister"><input type="submit" class="btn" value="SUBMIT" name="submit"/></a>
+			<!-- <input type="submit" name="submit" class="btn" value="SUBMIT" > -->
+			<input type="hidden" value="{$sourceid}" name="sourceid"/> 
+			<input type="hidden" value="{$id_trivia}" name="id_trivia"/> 
+			<!-- <input type="hidden" value="{$id_trivia}" name="id_trivia"/>  -->
+        </form>
+   </div><!-- end #content -->
+</div><!-- end #container -->
+<script language="javascript">
+{literal}	 
+	$(function () {
+			$("#name_marlboro").watermark( "Your Name", { useNative: false } );
+			$("#email_marlboro").watermark( "Your@email.com", { useNative: false } );
+			$("#phone_marlboro").watermark( "Your Phone Number", { useNative: false } );
+		});
+
+	$(document).on('click','.doPostRegister', function(){
+		var name = $('#name_marlboro').val();
+		var phone = $('#phone_marlboro').val();
+		var email = $('#email_marlboro').val();
+		var twitter = $('#twitter_marlboro').val();
+		var city = $('#city_marlboro').val();
+		var checkradio = $('.checkradio').val();
+		
+		if(!name){
+			var htm = "<font size=4 color=red>Name mohon di isi!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if(email){
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+				//wrong format	
+				var htm = "<font size=4 color=red>Email mohon di isi dengan benar!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>Email mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (phone) {
+			if(isNaN(phone)){
+				var htm = "<font size=4 color=red>No Telphone mohon di isi dengan angka!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>No Telphone mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (twitter=='@') {
+			var htm = "<font size=4 color=red>Account twitter mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (city=='') {		
+			var htm = "<font size=4 color=red>city mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		$('input[name="brandticker"]').on('change',function(){
+			if($(this).val()=='YES'){
+				if ($('.check_register').is(':checked')){
+					
+				} else {
+					var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+					$('.msg_Registrasi').html(htm);
+					return false;
+				}
+			}
+		});
+		
+		if ($('.check_nba').is(':checked')){
+			
+		} else {
+			var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+	});
+	
+	$('input[name="brandticker"]').on('change',function(){
+		if($(this).val()=='YES'){
+			$(".branddiv").show();
+		}else{
+			$(".branddiv").hide();
+		}
+		
+	});
+
+</script>
+>>>>>>> .r90
+{/literal}

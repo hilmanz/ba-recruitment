@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader
+END
+Excel2007.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/Excel2007.php
+END
+IReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/IReadFilter.php
+END
+CSV.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/CSV.php
+END
+IReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/IReader.php
+END
+Serialized.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/Serialized.php
+END
+OOCalc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/OOCalc.php
+END
+SYLK.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/SYLK.php
+END
+Excel5.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/Excel5.php
+END
+DefaultReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/DefaultReadFilter.php
+END
+Excel2003XML.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/PHPExcel/Reader/Excel2003XML.php
+END

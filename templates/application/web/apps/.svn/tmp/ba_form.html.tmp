@@ -1,0 +1,39 @@
+<div id="container">
+   <div id="content">
+        <form class="quizForm dataForm" action="" method="POST">
+            <div class="section">
+                    <h2 class="red">COMPLETE YOUR DETAILS</h2>
+                    <h4>YOU'RE ONE STEP CLOSER TO GET INTO OUR LIST. PLEASE FILL IN ALL THE REQUIRED FIELDS BELOW AND YOU'RE GOOD TO GO! </h4>
+                    <div class="row">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" value="{$name}" />
+                    </div>
+                    <div class="row">
+                    <label>Email</label>
+                    <input type="mail" name="email" value="{$email}" />
+                    </div>
+                    <div class="row">
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="phone" value="{$phone}" />
+                    </div>
+                    <div class="row">
+                    <label>Twitter</label>
+					<span class="attwit">@</span>
+                    <input type="text" name="twitter" class="twitterField" id="twitter" value="{$twitter}" />
+                    </div>
+            </div><!-- end .section -->
+            <div class="row agreeTerm">
+            	<input type="checkbox" class="styled" required />
+                <h5>I am an adult smoker, 18 years or older, residing in the Indonesia. I have read and understood the <a href="#">Terms and Conditions</a></h5>
+            </div>
+            <div class="row agreeTerm">
+            	<input type="checkbox" class="styled" required/>
+                <h5>I have read and agree with the <a href="#">NDA</a></h5>
+            </div>
+			<input type="submit" name="submit" class="btn" value="SUBMIT" >
+			<input type="hidden" value="{$sourceid}" name="sourceid"/> 
+			<input type="hidden" value="{$id_trivia}" name="id_trivia"/> 
+			<!-- <input type="hidden" value="{$id_trivia}" name="id_trivia"/>  -->
+        </form>
+   </div><!-- end #content -->
+</div><!-- end #container -->

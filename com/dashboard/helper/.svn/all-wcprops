@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper
+END
+uActivitiesHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/uActivitiesHelper.php
+END
+webActivityHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/webActivityHelper.php
+END
+baentourageHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/baentourageHelper.php
+END
+letterHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/letterHelper.php
+END
+demographyHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/demographyHelper.php
+END
+redeemHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/redeemHelper.php
+END
+googleAnalyticHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/googleAnalyticHelper.php
+END
+uCategoryHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/uCategoryHelper.php
+END
+taskHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/taskHelper.php
+END
+uRegMethodHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/uRegMethodHelper.php
+END
+baperformanceHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/baperformanceHelper.php
+END
+loginHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/loginHelper.php
+END
+uDemoHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/uDemoHelper.php
+END
+dataHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/dataHelper.php
+END
+userCategoryHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/userCategoryHelper.php
+END
+userHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/userHelper.php
+END
+permissionHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/com/dashboard/helper/permissionHelper.php
+END

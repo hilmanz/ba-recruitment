@@ -1,0 +1,4 @@
+#anim1,#anim2,#anim3,#anim4,#anim5,#anim6,#anim7,.zooming,.fromlefts,.fromrights,.fromrights2,.fromtops,.frombigs,.fromtops2,.tadas{
+	opacity:1 !important;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+}

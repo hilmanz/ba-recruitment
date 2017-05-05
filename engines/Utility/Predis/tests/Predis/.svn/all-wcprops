@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis
+END
+MonitorContextTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/MonitorContextTest.php
+END
+ClientExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/ClientExceptionTest.php
+END
+ClientTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/ClientTest.php
+END
+HelpersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/HelpersTest.php
+END
+ConnectionParametersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/ConnectionParametersTest.php
+END
+CommunicationExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/CommunicationExceptionTest.php
+END
+PredisExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/PredisExceptionTest.php
+END
+ServerExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/ServerExceptionTest.php
+END
+ResponseQueuedTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/ResponseQueuedTest.php
+END
+ConnectionFactoryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/ConnectionFactoryTest.php
+END
+ResponseErrorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ba-recruitment/!svn/ver/2/trunk/brightcomm/engines/Utility/Predis/tests/Predis/ResponseErrorTest.php
+END

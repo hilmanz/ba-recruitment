@@ -1,0 +1,189 @@
+<link type="text/css" href="{$basedomain}assets/css/a360.css" rel="stylesheet" />
+<meta charset="utf-8" />
+<meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+<meta name="keywords" content="social media monitoring, social media monitoring indonesia,media monitoring indonesia,sentiment analysis bahasa indonesia,sonar media monitoring,sonar social media monitoring" />
+<meta name="robots" content="index,all"/>
+<meta name="revisit-after" content="3 Days"/>
+<link type="text/css" href="{$basedomain}assets/css/superfish.css" rel="stylesheet" />
+<link type="text/css" href="{$basedomain}assets/fonts/roboto.css" rel="stylesheet" />
+<link type="text/css" href="{$basedomain}assets/css/video.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="{$basedomain}assets/js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<link rel="stylesheet" href="{$basedomain}assets/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{$basedomain}assets/css/skins/tango/skin.css" type="text/css" media="screen" />
+<link type="text/css" href="{$basedomain}assets/css/responsive.css" rel="stylesheet" />
+<!-- Add jQuery library -->
+<script type="text/javascript" src="{$basedomain}assets/js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<!-- JS PLUGIN -->
+<script src="{$basedomain}assets/js/jquery.gradienttext-0.1.min.js"></script>
+<script src="{$basedomain}assets/js/customform.js"></script>
+<script src="{$basedomain}assets/js/video.js"></script>
+<script>
+{literal}
+_V_.options.flash.swf = "{$basedomain}assets/js/video-js.swf";
+</script>
+{/literal}
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.validate.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.effects.core.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.effects.shake.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.jcarousel.min.js"></script>
+
+<!-- Modernizr -->
+<script src="{$basedomain}assets/js/modernizr.js"></script>
+<script src="{$basedomain}assets/js/marlboro-req.js"></script>
+<title>Brightcom Creative Communication.</title>
+<!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+
+<script>
+	var basedomain = "{$basedomain}" ;
+	var pages = "{$pages}" ;
+	var locale = {$locale|@json_encode} ;
+	var lifetime = "{$lifetime}";
+	var isLogin = "{$isLogin}";	
+
+</script><link type="text/css" href="{$basedomain}assets/css/a360.css" rel="stylesheet" />
+<div class="brandambasador">
+	<div id="body" class="wrapper">
+		<div id="brandambasadorPage">
+			<div class="section">
+				<div class="bgFormPaper">
+					<div class="entryForm">
+						{*}<h1 class="logoAmild" style="text-shadow: 0px 0px 1px rgb(102, 102, 102);">CREATORS PROJECT</h1>{/*}
+                        <h3>Form Registration</h3>
+                        <p>Daftarkan diri kamu sekarang! Masukkan email dan no telepon kamu. Start your journey</p>
+						<form action="" method="POST">
+                            <div class="row">
+                                <label>Name</label>
+                                <input type="text" name="name" id="name_amild" value="{$name}" />
+                            </div>
+                            <div class="row">
+                                <label>Email :</label>
+                                <input type="text" name="email" id="email_amild" value="{$email}" />
+                            </div>
+							<div class="row rowSelect">
+								<label>City</label>
+                                <div class="inSelect">
+                                <select name="city" class="styled">
+                                    <option value="" selected> - </option>
+                                    {section name=i loop=$loadCities}
+                                    <option value="{$loadCities[i].city}" >{$loadCities[i].city}</option>
+                                    {/section}
+                                </select> 
+                                </div>
+							</div>
+							<div class="row">
+								<label>Province</label>
+								<input type="text" name="province" id="province" value="{$province}" />
+							</div>
+                            <div class="row">
+                                <label>Phone :</label>
+                                <input type="text" name="phone" id="phone_amild" value="{$phone}" />
+                            </div>
+							<div class="row rowChekbox">
+							<label>Are you smoker?</label>
+                                <div class="inSelect">
+                                    <input type="radio" name="brandticker" value="YES" class="styled" /><span class="labelText">YES</span>
+                                    <input type="radio" name="brandticker" value="NO" class="styled" /><span class="labelText">NO</span>
+                                </div>
+							</div>
+							<div class="branddiv" style="display:none;">
+								<label>Brand</label>
+								<input type="text" name="brandsmoke" id="brandsmoke" value="{$brandsmoke}" />
+							</div>
+                            <div class="row">
+                                <label>Twitter :</label>
+                                <span class="attwit">@</span>
+                                <input type="text" name="twitter" class="twitterField" id="twitter_amild" value="{$twitter}" />
+                            </div>
+                            <!--div class="row">
+                                <a href="javascript:void(0);" class="iconUpload foto_register">UPLOAD PHOTO</a>
+                                <div class="upload_registrasi"></div>
+                            </div-->
+                            <div class="row msg_Registrasi"></div>
+                            <div class="row">
+                                <input type="checkbox" id="check_register" required/>
+                                <span class="agreeText"> Saya berumur 19 tahun atau lebih dan perokok. Berminat untuk menerima  materi promosi dan informasi tentang peluncuran merek, perubahan kemasan, acara, kegiatan, pemasaran, dan peraturan produk tembakau <a target="_blank" href="https://login.amild.com/Templates/Termsandconditions.aspx">Syarat dan KEtentuan</a></span>
+                                <p class="information"> Bagi Anda yang mendaftarkan diri dan masuk dalam kriteria akan mengikuti serangkaian proses penilaian, dimana jika terpilih Anda akan bekerja untuk PT Brightcomm dan menjalankan tugas dalam Brand Ambassador program untuk klien kami  PT. HM Sampoerna Tbk. </p>
+								<a class="doPostRegister"><input type="submit" value="SUBMIT" name="submit"/></a>
+                                <input type="hidden" value="{$acts}" name="sourceid"/> 
+                            </div>
+                        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- END .body -->
+
+<script>
+	{literal}
+	
+	$(document).on('click','.doPostRegister', function(){
+		var name = $('#name_amild').val();
+		var phone = $('#phone_amild').val();
+		var email = $('#email_amild').val();
+		var twitter = $('#twitter_amild').val();
+		
+		if(!name){
+			var htm = "<font size=4 color=red>Name mohon di isi!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if(email){
+			var atpos = email.indexOf("@");
+			var dotpos = email.lastIndexOf(".");
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+				//wrong format	
+				var htm = "<font size=4 color=red>Email mohon di isi dengan benar!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>Email mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (phone) {
+			if(isNaN(phone)){
+				var htm = "<font size=4 color=red>No Telphone mohon di isi dengan angka!</font>";
+				$('.msg_Registrasi').html(htm);
+				return false;
+			}
+		} else {
+			var htm = "<font size=4 color=red>No Telphone mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if (twitter=='@') {
+			var htm = "<font size=4 color=red>Account twitter mohon di isi</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+		
+		if ($('#check_register').is(':checked')){
+			
+		} else {
+			var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		}
+	});
+	
+	
+	$('input[name="brandticker"]').on('change',function(){
+		if($(this).val()=='YES'){
+			$(".branddiv").show();
+		}else{
+			$(".branddiv").hide();
+		}
+		
+	});
+
+</script>
+{/literal} 

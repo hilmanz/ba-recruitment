@@ -1,0 +1,76 @@
+<<<<<<< .mine
+<div id="container">
+   <div id="content">
+        <div class="section">
+        	<h1 class="red">WELCOME TO BRIGHTCOMM!</h1>
+            <h3>WE ARE LOOKING FOR TRUE BELIEVERS<br />
+            <span class="grey">IT'S TIME TO SHOW YOUR DETERMINATION FOR A NEW JOURNEY & PRICELESS EXPERIENCE.</span></h3>
+        </div><!-- end .section -->
+        <div class="row agreeTerm">
+            	<input type="checkbox" class="styled check_register" />
+                <h5>Bagi Anda yang mendaftarkan diri dan memenuhi kriteria akan mengikuti serangkaian proses penilaian, dimana jika terpilih Anda akan bekerja untuk PT. Brightcomm dan menjalankan tugas dalam Brand Ambassador program untuk klien kami, (PT HM Sampoerna, Tbk.)</h5>
+            </div>
+			 <div class="row msg_Registrasi"></div> 
+        <a href="
+		{$basedomain}
+		{if $sourceid=='marlboro'}trivia/?sourceid=marlboro{/if}
+		{if $sourceid=='amild'}amild{/if}
+		{if $sourceid==''}trivia{/if}" class="btn doPostRegister">START YOUR JOURNEY!</a>
+   </div><!-- end #content -->
+</div><!-- end #container -->
+
+<script language="javascript">
+{literal} 
+	  
+	$(document).on('click','.doPostRegister', function(){
+		
+		if ($('.check_register').is(':checked')){
+			
+		} else {
+			var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		} 
+		
+	});
+	 
+</script>
+=======
+<div id="container">
+   <div id="content">
+        <div class="section">
+        	<h1 class="red">WELCOME TO BRIGHTCOMM!</h1>
+            <h3>WE ARE LOOKING FOR TRUE BELIEVERS<br />
+            <span class="grey">IT'S TIME TO SHOW YOUR DETERMINATION FOR A NEW JOURNEY & PRICELESS EXPERIENCE.</span></h3>
+        </div><!-- end .section -->
+        <div class="row agreeTerm">
+            	<input type="checkbox" class="styled check_register" />
+                <h5>Bagi Anda yang mendaftarkan diri dan memenuhi kriteria akan mengikuti serangkaian proses penilaian, dimana jika terpilih Anda akan bekerja untuk PT. Brightcomm dan menjalankan tugas dalam Brand Ambassador program untuk klien kami,<br />(PT. Phillip Morris Indonesia)</h5>
+            </div>
+			 <div class="row msg_Registrasi"></div> 
+        <a href="
+		{$basedomain}
+		{if $sourceid=='marlboro'}trivia/?sourceid=marlboro{/if}
+		{if $sourceid=='amild'}amild{/if}
+		{if $sourceid==''}trivia{/if}" class="btn doPostRegister">START YOUR JOURNEY!</a>
+   </div><!-- end #content -->
+</div><!-- end #container -->
+
+<script language="javascript">
+{literal} 
+	  
+	$(document).on('click','.doPostRegister', function(){
+		
+		if ($('.check_register').is(':checked')){
+			
+		} else {
+			var htm = "<font size=4 color=red>Anda belum setuju dengan syarat & ketentuan yang berlaku!</font>";
+			$('.msg_Registrasi').html(htm);
+			return false;
+		} 
+		
+	});
+	 
+</script>
+>>>>>>> .r90
+{/literal}
